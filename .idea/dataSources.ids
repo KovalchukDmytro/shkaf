@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Rails shkaf: default" uuid="6fdca15e-9104-47c4-a3f5-269c4383b2ac">
+    <database-info product="MySQL" version="5.5.45-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="shkaf"/>
+      <table id="2" parent="1" name="abouts"/>
+      <table id="3" parent="1" name="ar_internal_metadata"/>
+      <table id="4" parent="1" name="constructors"/>
+      <table id="5" parent="1" name="contact_for_feedbacks"/>
+      <table id="6" parent="1" name="galleries"/>
+      <table id="7" parent="1" name="ordered_feedback_sessions"/>
+      <table id="8" parent="1" name="orders"/>
+      <table id="9" parent="1" name="schema_migrations"/>
+      <table id="10" parent="1" name="users"/>
+      <column id="11" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="12" parent="2" name="type">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="13" parent="2" name="title">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="14" parent="2" name="body">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="15" parent="2" name="img">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="16" parent="2" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="17" parent="2" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="18" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="19" parent="3" name="key">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="20" parent="3" name="value">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="21" parent="3" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="22" parent="3" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="23" parent="3" name="PRIMARY">
+        <columns>key</columns>
+        <primary>1</primary>
+      </key>
+      <column id="24" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="25" parent="4" name="title">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="26" parent="4" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="27" parent="4" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="28" parent="4" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="29" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="30" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="31" parent="5" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="32" parent="5" name="value">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="33" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="34" parent="6" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="35" parent="6" name="img">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="36" parent="6" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="37" parent="6" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="38" parent="6" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="39" parent="6" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="40" parent="7" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="41" parent="7" name="username">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="42" parent="7" name="phone_number">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="43" parent="7" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="44" parent="7" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="45" parent="7" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="46" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="47" parent="8" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="48" parent="8" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="49" parent="8" name="phone_number">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="50" parent="8" name="email">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="51" parent="8" name="img">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="52" parent="8" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="53" parent="8" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="54" parent="8" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="55" parent="8" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="56" parent="9" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="57" parent="9" name="PRIMARY">
+        <columns>version</columns>
+        <primary>1</primary>
+      </key>
+      <column id="58" parent="10" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="59" parent="10" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="60" parent="10" name="login">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="61" parent="10" name="password">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="62" parent="10" name="position">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="63" parent="10" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+  <data-source name="Rails shkaf: test" uuid="262bbded-1066-44e2-a518-c857dc94e0c0">
+    <database-info product="MySQL" version="5.5.45-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="shkaf"/>
+      <table id="2" parent="1" name="abouts"/>
+      <table id="3" parent="1" name="ar_internal_metadata"/>
+      <table id="4" parent="1" name="constructors"/>
+      <table id="5" parent="1" name="contact_for_feedbacks"/>
+      <table id="6" parent="1" name="galleries"/>
+      <table id="7" parent="1" name="ordered_feedback_sessions"/>
+      <table id="8" parent="1" name="orders"/>
+      <table id="9" parent="1" name="schema_migrations"/>
+      <table id="10" parent="1" name="users"/>
+      <column id="11" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="12" parent="2" name="type">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="13" parent="2" name="title">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="14" parent="2" name="body">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="15" parent="2" name="img">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="16" parent="2" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="17" parent="2" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="18" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="19" parent="3" name="key">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="20" parent="3" name="value">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="21" parent="3" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="22" parent="3" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="23" parent="3" name="PRIMARY">
+        <columns>key</columns>
+        <primary>1</primary>
+      </key>
+      <column id="24" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="25" parent="4" name="title">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="26" parent="4" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="27" parent="4" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="28" parent="4" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="29" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="30" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="31" parent="5" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="32" parent="5" name="value">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="33" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="34" parent="6" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="35" parent="6" name="img">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="36" parent="6" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="37" parent="6" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="38" parent="6" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="39" parent="6" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="40" parent="7" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="41" parent="7" name="username">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="42" parent="7" name="phone_number">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="43" parent="7" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="44" parent="7" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="45" parent="7" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="46" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="47" parent="8" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="48" parent="8" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="49" parent="8" name="phone_number">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="50" parent="8" name="email">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="51" parent="8" name="img">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="52" parent="8" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="53" parent="8" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="54" parent="8" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="55" parent="8" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="56" parent="9" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="57" parent="9" name="PRIMARY">
+        <columns>version</columns>
+        <primary>1</primary>
+      </key>
+      <column id="58" parent="10" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="59" parent="10" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="60" parent="10" name="login">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="61" parent="10" name="password">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="62" parent="10" name="position">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="63" parent="10" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+  <data-source name="Rails shkaf: development" uuid="1ac96ba3-1014-480a-8878-2b720e6a6f9f">
+    <database-info product="MySQL" version="5.5.45-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="shkaf"/>
+      <table id="2" parent="1" name="abouts"/>
+      <table id="3" parent="1" name="ar_internal_metadata"/>
+      <table id="4" parent="1" name="constructors"/>
+      <table id="5" parent="1" name="contact_for_feedbacks"/>
+      <table id="6" parent="1" name="galleries"/>
+      <table id="7" parent="1" name="ordered_feedback_sessions"/>
+      <table id="8" parent="1" name="orders"/>
+      <table id="9" parent="1" name="schema_migrations"/>
+      <table id="10" parent="1" name="users"/>
+      <column id="11" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="12" parent="2" name="type">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="13" parent="2" name="title">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="14" parent="2" name="body">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="15" parent="2" name="img">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="16" parent="2" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="17" parent="2" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="18" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="19" parent="3" name="key">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="20" parent="3" name="value">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="21" parent="3" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="22" parent="3" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="23" parent="3" name="PRIMARY">
+        <columns>key</columns>
+        <primary>1</primary>
+      </key>
+      <column id="24" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="25" parent="4" name="title">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="26" parent="4" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="27" parent="4" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="28" parent="4" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="29" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="30" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="31" parent="5" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="32" parent="5" name="value">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="33" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="34" parent="6" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="35" parent="6" name="img">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="36" parent="6" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="37" parent="6" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="38" parent="6" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="39" parent="6" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="40" parent="7" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="41" parent="7" name="username">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="42" parent="7" name="phone_number">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="43" parent="7" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="44" parent="7" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="45" parent="7" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="46" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="47" parent="8" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="48" parent="8" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="49" parent="8" name="phone_number">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="50" parent="8" name="email">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="51" parent="8" name="img">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="52" parent="8" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="53" parent="8" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="54" parent="8" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="55" parent="8" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="56" parent="9" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="57" parent="9" name="PRIMARY">
+        <columns>version</columns>
+        <primary>1</primary>
+      </key>
+      <column id="58" parent="10" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="59" parent="10" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="60" parent="10" name="login">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="61" parent="10" name="password">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="62" parent="10" name="position">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="63" parent="10" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+  <data-source name="Rails shkaf: production" uuid="414b8f25-75e8-4abc-838f-ff85cb0d0fb8">
+    <database-info product="MySQL" version="5.5.45-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="shkaf"/>
+      <table id="2" parent="1" name="abouts"/>
+      <table id="3" parent="1" name="ar_internal_metadata"/>
+      <table id="4" parent="1" name="constructors"/>
+      <table id="5" parent="1" name="contact_for_feedbacks"/>
+      <table id="6" parent="1" name="galleries"/>
+      <table id="7" parent="1" name="ordered_feedback_sessions"/>
+      <table id="8" parent="1" name="orders"/>
+      <table id="9" parent="1" name="schema_migrations"/>
+      <table id="10" parent="1" name="users"/>
+      <column id="11" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="12" parent="2" name="type">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="13" parent="2" name="title">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="14" parent="2" name="body">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="15" parent="2" name="img">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="16" parent="2" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="17" parent="2" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="18" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="19" parent="3" name="key">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="20" parent="3" name="value">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="21" parent="3" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="22" parent="3" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="23" parent="3" name="PRIMARY">
+        <columns>key</columns>
+        <primary>1</primary>
+      </key>
+      <column id="24" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="25" parent="4" name="title">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="26" parent="4" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="27" parent="4" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="28" parent="4" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="29" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="30" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="31" parent="5" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="32" parent="5" name="value">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="33" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="34" parent="6" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="35" parent="6" name="img">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="36" parent="6" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="37" parent="6" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="38" parent="6" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="39" parent="6" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="40" parent="7" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="41" parent="7" name="username">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="42" parent="7" name="phone_number">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="43" parent="7" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="44" parent="7" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="45" parent="7" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="46" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="47" parent="8" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="48" parent="8" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="49" parent="8" name="phone_number">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="50" parent="8" name="email">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="51" parent="8" name="img">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="52" parent="8" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="53" parent="8" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="54" parent="8" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="55" parent="8" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="56" parent="9" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="57" parent="9" name="PRIMARY">
+        <columns>version</columns>
+        <primary>1</primary>
+      </key>
+      <column id="58" parent="10" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="59" parent="10" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="60" parent="10" name="login">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="61" parent="10" name="password">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="62" parent="10" name="position">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="63" parent="10" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

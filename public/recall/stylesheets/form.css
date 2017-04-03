@@ -1,0 +1,102 @@
+.popup_body {
+	color: #fff;
+	text-align: center;
+}
+
+.standard_form  {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'a_avanteltlight', sans-serif;
+
+}
+
+.standard_form input {
+	width: 225px;
+	height: 40px;
+	padding: 0 20px 0 60px;
+	margin: 0 0 10px 0;
+	border: none;
+	background: #fff;
+	font-family: 'a_avanteltlight',sans-serif;
+	font-size: 22px;
+	color: #B0B1B1;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	outline: none;
+}
+
+.standard_form .recall_name {
+  background: #ffffff url(../images/request_name.png) 15px 50% no-repeat;
+}
+
+.standard_form .recall_phone {
+  background: #ffffff url(../images/request_phone.png) 15px 50% no-repeat;
+}
+
+.standard_form label {
+	position: absolute;
+	padding: 5px 0 0 60px;
+	color: #B0B1B1;
+	font-size: 22px;
+}
+
+.standard_form li {
+	list-style: none;
+}
+
+.error {
+	color: #f86a0e;
+	text-align: center;
+	margin: 20px 0 0 0;
+}
+.send-application {
+	width: 415px !important;
+}
+.feedbacktitle {
+	margin: 0 0 10px 0px;
+}
+.li_reccal {
+	float: left;
+	margin-right: 10px;
+}
+.standard_form label span {
+	color: red;
+	font-weight: bold;
+}
+
+.standard_form_wrap .submit {
+	float: right;
+}
+
+input.submit  {
+	cursor: pointer;
+	text-decoration: none; 
+	text-align: center; 	
+	margin: 0 auto;
+	padding: 0 10px; 
+	border: 3px solid #fff; 
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px; 
+	border-radius: 6px;
+	color: #7C7C7C; 
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+input.submit:hover {
+	background: #7C7C7C;
+	color: #ffffff; 
+}
+
+.standard_form tr, .standard_form td {
+	vertical-align: top;
+}
+label {
+	color: black;
+}
+.recall_phone {
+    margin-left: 5px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <base href="index.html">
+    <link rel="stylesheet" type="text/css" href="../recall/stylesheets/reset.css">
+    <link rel="stylesheet" type="text/css" href="../recall/stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="../recall/stylesheets/form.css">
+
+    <script type="text/javascript" src="../recall/javascripts/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="../recall/javascripts/form.js"></script>
+</head>
+
+<body class="popup_body">
+<div style="background-color: darkgray">
+	<p class="popup_title">Заказать обратный звонок</p>
+
+  <%=form_for @ordered_feedback_session, url: {action: 'create'},
+              html:{class:'FormClass'} do |f|%>
+
+      <%=f.label :username%>
+      <%=f.text_field :username%>
+      <br>
+      <%=f.label :phone_number%>
+      <%=f.text_field :phone_number%>
+      <br>
+      <%=f.label :description%>
+      <%=f.text_field :description%>
+      <br>
+      <%=f.submit :send%>
+  <%end%>
+	<!--<form name="showFedbackForm" action="recall.html" method="post">
+		<ul class="standart_form">
+			<li>
+				<label>Ваше имя</label>
+				<input type="text" name="name" value="" class="recall_name">
+			</li>
+			<li>
+				<label>Телефон</label>
+				<input type="text" name="phone" value="" class="recall_phone">
+			</li>	
+			<li>
+				<input type="submit" name="submit_recall" value="Отправить" class="submit">
+			</li>
+		</ul>
+	</form>-->
+</div>
+</body>
+</html>			

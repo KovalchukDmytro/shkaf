@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <script>
+    $(document).ready(function() {
+      $("#gallery").carouFredSel();
+    });
+    $(document).ready(function() {
+      $("#gallery").fancybox();
+    });
+  </script>
+  <script type="text/javascript" src="../index/javascripts/jquery.prettyPhoto.js"></script>
+  <script type="text/javascript" src="../index/javascripts/main.js"></script>
+  <title>Шкафы-купе в Херсоне</title>
+</head>
+
+<body>
+<div class="wrapper">
+  <header>
+    <div class="nav">
+      <div class="nav-btn">
+        <a href="" class="logo"></a>
+        <a href="#section1" class="topic">Галерея</a>
+        <a href="#section2" class="topic">Конструктор</a>
+        <a href="#section3" class="topic">О нас</a>
+        <a href="#section4" class="topic">Способы заказа</a>
+        <a href="#section6" class="topic">Контакты</a>
+      </div>
+      <div class="header-contact">
+        <div class="header-phone">
+          <%=@feedback_phone_number_1%>
+          <br>
+          <%=@feedback_phone_number_2%>
+          <br>
+          <%=@feedback_phone_number_3%>
+          <br>
+        </div>
+        <a data-fancybox-type="iframe" class="header_recall popup_link" href="recall/recall.html">Заказать звонок</a>
+      </div>
+    </div>
+    <div class="header-img">
+      <div class="header-img-1"></div>
+      <div class="header-img-2" ></div>
+      <div class="header-img-3" ></div>
+      <div class="header-img-4" ></div>
+      <div class="header-img-5" ></div>
+    </div>
+    <div class="header-slogan">
+      <div class="header-slogan-content">
+        <!--Переписать!-->
+        <?php
+              $q = mysql_query("SELECT article FROM `articles`");
+            ?>
+              <span>
+                <?= $q['article'] ?>
+              </span>
+      </div>
+    </div>
+  </header>
+
+  <section class="section cd-section b-galerry" id="section1">
+    <div class="fixsize">
+      <div class="h1">
+        <!--Переписать!-->
+        Шкаф-купе может очень выгодно подчеркнуть
+        <br>
+        настроение Вашего дома
+      </div>
+      <p>
+        <!--Переписать!-->
+        У нас Вы можете заказать шкаф-купе с каким угодно наполнением дверей: ДПС, лакобель, фотопечать, пескоструй, а также комбинированные шкафы с абсолютно любым расположением внутреннего наполнения (стандартные или выдвижные полки и ящики, штанги для одежды разной длины, корзины, сетки для обуви). Мы изготовим для Вас встроенные и корпусные модели на любой вкус, которые идеально впишутся именно в Ваш дизайн интерьера. Вы сможете создать для себя какой угодно шкаф-купе - фото наших готовых работ помогут Вам определиться с выбором.
+      </p>
+      <div class="gallery_btn_wrap">
+        <a class="gallery_viev_all" href="#">Посмотреть все</a>
+      </div>
+      <div class="carousel">
+        <div class="gallery" id="gallery">
+          <!--Переписать!-->
+          <img src="../gallery/img1.jpg" width="250" height="189">
+          <img src="../gallery/img1.jpg" width="250" height="189">
+          <img src="../gallery/img1.jpg" width="250" height="189">
+          <img src="../gallery/img1.jpg" width="250" height="189">
+          <img src="../gallery/img1.jpg" width="250" height="189">
+          <img src="../gallery/img1.jpg" width="250" height="189">
+          <img src="../gallery/img1.jpg" width="250" height="189">
+          <img src="../gallery/img1.jpg" width="250" height="189">
+          <img src="../gallery/img1.jpg" width="250" height="189">
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="btn">
+        <a class="prev" id="gallery_prev" href="#"></a>
+        <a class="next" id="gallery_next" href="#"></a>
+      </div>
+      <div class="pagination" id="gallery_pag"></div>
+      </div>
+  </section>
+
+  <section class="section cd-section b_build" id="section2">
+    <div class="fixsize">
+      <div class="h1">Конструктор</div>
+      <a data-fancybox-type="iframe" href="recall/recall.html" class="recall_btn popup_link">
+        Заказать звонок
+        <br>
+        для помощи в
+        <br>
+        конструкторе
+        <span class="recall_btn_bg"></span>
+      </a>
+      <div class="b_build_descr">
+        <!--Переписать!-->
+        <p>Сделайте свой собственный шкаф-купе всего в 3 шага: </p>
+        <p>1. Создать корпус шкафа и заполнить его необходимыми опциями (полки, вешалки и др.)
+          <br>
+          2. Установить двери, выбрать их количество,заполнение и цвет.
+          <br>
+          3. Отправить заявку в наш офис указав ваши контактные данные (имя, телефон, адрес эл. почты) для удобства обратной связи с Вами.
+        </p>
+      </div>
+      <div class="constructor"></div>
+    </div>
+  </section>
+
+  <section class="section cd-section b_advantage" id="section3">
+    <div class="fixsize clearfix">
+      <!--Переписать!-->
+      <div class="h1">Наши преимущества</div>
+      <p>Мы предлагаем самые современные и стильные решения для шкафов-купе</p>
+      <div class="advantage_wrap clearfix">
+
+        <div class="advantage_item animated-fade-in fadeIn" data-delay="0">
+          <div class="advantage_img">
+            <img src="../index/stylesheets/images/advantage1.jpg">
+            <span class="advantage_title">Разнообразные материалы</span>
+          </div>
+          <div class="advantage_descr">Контраст цветов и высококачественные материалы</div>
+        </div>
+
+        <div class="advantage_item animated-fade-in fadeIn" data-delay="300">
+          <div class="advantage_img">
+            <img src="../index/stylesheets/images/advantage2.jpg">
+            <span class="advantage_title">Внутреннее наполнение</span>
+          </div>
+          <div class="advantage_descr">
+            Возможность
+            <br>
+            подбора по
+            <br>
+            собственным
+          </div>
+        </div>
+
+        <div class="advantage_item animated-fade-in fadeIn" data-delay="600">
+          <div class="advantage_img">
+            <img src="../index/stylesheets/images/advantage3.jpg">
+            <span class="advantage_title">Наполнение дверей</span>
+          </div>
+          <div class="advantage_descr">
+            Внедрение
+            <br>
+            современных
+            <br>
+            решений
+          </div>
+        </div>
+
+        <div class="advantage_item advantage_item_last animated-fade-in fadeIn" data-delay="900">
+          <div class="advantage_img">
+            <img src="../index/stylesheets/images/advantage4.jpg">
+            <span class="advantage_title">Индивидуальный проект</span>
+          </div>
+          <div class="advantage_descr">
+            Выбор любых
+            <br>
+            ниш для
+            <br>
+            расположения
+          </div>
+        </div>
+      </div>
+      <div class="h1 hh">Наше производство</div>
+      <p>
+        Изготовление шкафов-купе в Херсоне нашей компанией - это современное производство, на котором используется полностью автоматизированное оборудование, немецкого и итальянского качества. Все изделия проходят контроль качества на каждом этапе изготовления (выполняется предварительная сборка). Использование высококачественных материалов и фурнитуры позволяет нам достигать наилучших результатов и получать продукт, полностью соответствующий европейскому уровню и стандартам. В нашем магазине Вы можете купить шкаф-купе в Херсоне наилучшего качества!
+      </p>
+      <div class="production_wrap clearfix">
+        <a href="../index/stylesheets/images/production/production1.jpg" class="production_item production1 animated-hatch hatch" data-delay="0" rel="prettyPhoto[pr]"></a>
+        <a href="../index/stylesheets/images/production/production2.jpg" class="production_item production2 animated-hatch hatch" data-delay="300" rel="prettyPhoto[pr]"></a>
+        <a href="../index/stylesheets/images/production/production3.jpg" class="production_item production3 animated-hatch hatch" data-delay="600" rel="prettyPhoto[pr]"></a>
+        <a href="../index/stylesheets/images/production/production4.jpg" class="production_item production_item_last production4 animated-hatch hatch" data-delay="900" rel="prettyPhoto[pr]"></a>
+
+      </div>
+      </div>
+  </section>
+  <section class="section cd-section b_order" id="section4">
+    <div class="fixsize">
+      <div class="h1">Как заказать шкаф-купе</div>
+      <ul class="b_order_circle">
+        <li>1. Создайте свою
+          <br>модель в конструкторе
+          <br>и отправьте заявку
+        </li>
+        <li class="even">2. Получите на
+          <br>почту макет для
+          <br>окончательного
+          <br>согласования
+        </li>
+        <li>3. Оплатите на карту
+          <br>"Приватбанка или"
+          <br>при личной встрече
+        </li>
+        <li class="even">4. Ожидайте
+          <br>изготовления не
+          <br>более 10 дней
+          <br>(обычно сдаем<br>работу раньше)
+        </li>
+        <li>5. Получите
+          <br>доставку и сборку
+          <br>(бесплатно)
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section cd-section b_request" id="section5">
+    <div class="fixsize">
+      <div class="h1">Оформить заявку</div>
+      <p>
+        Вы можете отправить нам любую картинку, сканкопию, фото шкафа-купе  для рассчета стоимости.
+        <br>Не забудьте в текстовом поле указать желаемые размеры и др. комментарии.
+      </p>
+
+      <!--<form name="defaultAction" action="/app/assets/javascripts" method="post" enctype="multipart/form-data">-->
+        <div class="request_form">
+          <%=form_for @order, url: {action: 'create'}, html:{class:'request_form'} do |f|%>
+              <div class="request_inputs">
+              <%=f.text_field :name, class: "request_name", placeholder: "Ваше имя *"%>
+              <%=f.text_field :phone_number, class: "request_phone", placeholder: "Ваш телефон *"%>
+              <%=f.text_field :email, class: "request_mail", placeholder: "Ваш email *"%>
+              <%=f.file_field :img%>
+              </div>
+
+              <div class="request_textarea">
+              <%=f.text_area :description, placeholder: "Текст сообщения..."%>
+              </div>
+              <%=f.submit :send, value: "Отправить", class: "request_submit"%>
+          <%end%>
+        </div>
+
+    </div>
+  </section>
+</div>
+<footer class="footer cd-section" id="section6">
+  <div class="footer-top">
+    <div class="fixsize">
+      <div class="h1 footer_h1">Остались вопросы?</div>
+
+      <div class="footer_contact">
+        <div class="footer_contact_phone">
+          <div class="footer_contact_wrap">
+            <div class="footer_contact_title">Звоните:</div>
+            <div class="footer_contact_content">
+              <%=@feedback_phone_number_1%>
+              <br>
+              <%=@feedback_phone_number_2%>
+              <br>
+              <%=@feedback_phone_number_3%>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_contact_mail">
+          <div class="footer_contact_wrap">
+            <div class="footer_contact_title">Пишите:</div>
+            <div class="footer_contact_content footer_contact_email"><%=@feedback_email%></div>
+          </div>
+
+          <a href=<%=@feedback_vk_url%> class="vk"></a>
+          <a href=<%=@feedback_fb_url%> class="facebook"></a>
+          <a href=<%=@feedback_ok_url%> class="ok"></a>
+
+          <a data-fancybox-type="iframe" href="recall/recall.html" class="recall_link popup_link">Обратный звонок</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

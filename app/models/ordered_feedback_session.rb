@@ -1,0 +1,2 @@
+class OrderedFeedbackSession < ApplicationRecord
+end

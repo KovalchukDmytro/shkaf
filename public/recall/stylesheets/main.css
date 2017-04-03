@@ -1,0 +1,270 @@
+@font-face {
+  font-family: a_AvanteLtLight;
+  src: url("fonts/a_AvanteLtLight.ttf");
+}
+html {
+  font-family: "a_AvanteLtLight", sans-serif;
+}
+body {
+  margin: 0;
+  line-height: 1.4;
+}
+header {
+  width: 100%;
+  min-width: 1000px;
+  height: 650px;
+  overflow: hidden;
+  background: url("images/header-bg.jpg") 50% 50% no-repeat;
+}
+.nav {
+  width: 100%;
+  min-width: 1000px;
+  margin-top: 55px;
+  position: relative;
+}
+.nav:before,
+.nav:after {
+  content: "";
+  display: table;
+}
+.nav:after {
+  clear: both;
+}
+.nav-btn {
+  float: left;
+  height: 62px;
+  padding-right: 32px;
+  background: rgba(255, 255, 255, 0.55);
+}
+.wrapper  {
+  width: 100%;
+  min-width: 1000px;
+  margin: 0 auto;
+}
+.logo {
+  display: block;
+  float: left;
+  position: relative;
+  top: -48px;
+  width: 156px;
+  height: 158px;
+  background: url("images/header-logo.png");
+}
+.topic {
+  display: block; 
+  text-decoration: none;
+  text-transform: uppercase;
+  float: left;
+  padding-left: 30px;
+  text-align: center;
+  line-height: 62px;
+  font-size: 0.9em;
+  color: #626262;
+}
+.header-contact {
+  float: right;
+  text-align: right;
+  margin-right: 15px;
+}
+.header-phone {
+  color: #fff;
+  font-size: 1.25em;
+  padding-left: 50px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  background: url("images/phone-bg.png") 0 50% no-repeat;
+}
+.recall {
+  color: #fff;
+  float: right;
+}
+
+.header-img {
+  display: block;
+  height: 215px;
+  width: 100%;
+  min-width: 1000px;
+  margin: 40px auto 50px auto;
+}
+.header-img-1,
+.header-img-2,
+.header-img-3,
+.header-img-4,
+.header-img-5 {
+  width: 20%;
+  float: left;
+  height: 215px;
+  text-align: center;
+}
+.header-img-1 {
+  margin-top: 95px;
+  background: url("images/header-img-1.png") 50% 50% no-repeat;
+}
+.header-img-2 {
+  margin-top: 42px;
+  background: url("images/header-img-2.png") 50% 50% no-repeat;
+}
+.header-img-3 {
+  margin: 0;
+  background: url("images/header-img-3.png") 50% 50% no-repeat;
+}
+.header-img-4 {
+  margin-top: 50px;
+  background: url("images/header-img-4.png") 50% 50% no-repeat;
+}
+.header-img-5 {
+  margin-top: 96px;
+  background: url("images/header-img-5.png") 50% 50% no-repeat; 
+}
+
+.header-slogan {
+  width: 100%;
+  min-width: 1000px;
+  height: 140px;
+  position: absolute;
+}
+.header-slogan-content {
+  height: 140px;
+  padding-left: 40px;
+  float: right;
+  display: block;
+  background: rgba(248, 106, 14, 0.5);
+  text-align: right;
+  color: #fff;
+  font-size: 1.5em;
+}
+.header-slogan-content span {
+  display: block;
+  margin-top: 35px;
+  margin-right: 15px;
+} 
+.section {
+  display: block;
+  width: 100%;
+  min-width: 1000px;
+  padding: 30px 0;
+  overflow: hidden;
+}
+.b-gallery,
+.h1,
+p {
+  color: #5e5e5e;
+  font-size: 1.2em;
+  text-align: center;
+  margin: auto 25px;
+}
+.fixsize {
+  width: 1000px;
+  margin: 0 auto;
+}
+.h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+p {
+  margin-bottom: 10px;
+}
+.gallery-viev-all {
+  display: block;
+  color: #66cbb9;
+  float: right;
+  margin-right: 75px;
+  font-size: 1.2em;
+}
+.gallery {
+  width: 100%;
+  height: 189px;
+  text-align: center;
+  margin: 50px 50px;
+  overflow: hidden;
+}
+.gallery img {
+  display: block;
+  float: left;
+  margin: 0 25px 0;
+}
+.btn {
+  width: 100%;
+  height: 44px;
+  margin: -130px auto 60px;
+}
+.prev,
+.next {
+ float: left;
+ display: block;
+ z-index: 99;
+ left: -50px;
+ top: 50%;
+ margin: -35px 0 0 0;
+ width: 44px;
+ height: 44px;
+ background: url("images/arrows.png") 0 0 no-repeat;
+}
+.next {
+  float: right;
+  right: -50px;
+  background: url("images/arrows.png") 0 -44px no-repeat;
+}
+.pagination {
+  position: relative;
+  left: 48%;
+}
+.pagination a {
+  display: block;
+  float: left;
+  left: -50%;
+  margin: 0 2px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #7A7A7A;
+  color: #fff;
+  background: #fff;
+  overflow: hidden;
+  text-indent: -999px;
+  border-radius: 50%;
+}
+.pagination a.selected {
+  background: #7A7A7A;
+}
+
+.b_build {
+  background: #EDEDDF;
+  font-size: 1.125em;
+}
+.recall_btn {
+  display: block;
+  position: relative;
+  float: right;
+  padding: 10px;
+  width: 180px;
+  height: 85px;
+  text-align: right;
+  color: #fff;
+  line-height: 1.2;
+  text-decoration: none;
+  margin: 20px 0 0 0;
+  border-radius: 10px;
+  background: #FAA40E;
+}
+.recall_btn_bg {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 65px;
+  height: 64px;
+  background: url("images/recall_bg.png") 0 0 no-repeat;
+  }
+.b_build_descr {
+  margin: 0 260px 30px 15px;
+  font-size: 0.8em;
+
+}
+.constructor {
+  height: 710px;
+}
+.b_build_descr p {
+  text-align: left;
+  margin-left: 10px;
+}

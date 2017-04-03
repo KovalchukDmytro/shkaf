@@ -1,0 +1,52 @@
+.jq-file {
+
+}
+
+.jq-file input {
+	cursor: pointer;
+	height: auto;
+	line-height: 1em;
+}
+
+.jq-file__name {
+	width: 254px;
+	height: 34px;
+	padding: 0 25px 0 75px;
+	background-color: #fff;
+	line-height: 34px;
+	font-size: 22px;
+	color: #fff;
+	text-align: left;
+	background-color: #7C7C7C;
+	background-image: url(../images/file.png);
+	background-position: 10px 50%;
+	background-repeat: no-repeat;
+	border: 3px solid #fff;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.focused .jq-file__name {
+	/*border: 3px solid #fff;*/
+}
+.jq-file__browse {
+	display: none;
+}
+.jq-file:hover .jq-file__browse {
+	background-color: #E6E6E6;
+	background-position: 0 -10px;
+}
+.jq-file:active .jq-file__browse {
+	background: #F5F5F5;
+	box-shadow: inset 1px 1px 3px #DDD;
+}
+.jq-file.disabled .jq-file__name {
+	color: #888;
+}
+.jq-file.disabled,
+.jq-file.disabled .jq-file__browse {
+	border-color: #CCC;
+	background: #F5F5F5;
+	box-shadow: none;
+	color: #888;
+}

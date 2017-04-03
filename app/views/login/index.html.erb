@@ -1,0 +1,16 @@
+<div style="color:red">
+  <%=@error%>
+  <br>
+</div>
+
+<%=form_tag(controller: 'login', action: 'create', method: 'post') do%>
+
+    <%=label_tag(:l, 'Input login') %>
+    <%=text_field_tag(:l)%>
+    <br>
+    <%=label_tag(:p, 'Input password')%>
+    <%=password_field_tag(:p)%>
+    <br>
+    <%=submit_tag('Submit')%>
+
+<%end%>
